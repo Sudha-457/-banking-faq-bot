@@ -1,0 +1,9 @@
+pandas
+numpy
+scikit-learn
+nltk
+pyttsx3
+SpeechRecognition
+pyaudio
+flask
+flask-cors

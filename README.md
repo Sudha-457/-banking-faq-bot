@@ -1,21 +1,78 @@
-# Banking FAQ Bot
-This is retrieval based Chatbot based on FAQs found at a banking website.
-I've scraped the FAQs of various section from a banking website and saved it in a JSON file with format
-{section:
-[[question, answer], [question, answer], ...]
-}
+# Banking FAQ Chatbot
 
-Then I merged all this section into one big JSON file with all sections
+A smart banking assistant that helps users with common banking queries. The chatbot features a modern web interface similar to Bank of India's Smart Banking page and provides quick responses to banking-related questions.
 
-Later I have transformed this JSON file to CSV and used the section names as class for the questions
+## Features
 
-Then I preprocess this csv file by stemming and tf-idf vectorizing the questions
-The same process is applied to user's query.
+- 🎯 Smart query matching for accurate responses
+- 💬 Modern chat interface
+- 🎨 Responsive web design
+- 🏦 Banking-specific knowledge base
+- 🔊 Voice interaction support
+- 🌐 Web-based interface matching Bank of India's design
 
-I have used Support Vector Machine with linear kernel to classify the user's query into different classes
-Once the class is found, I define a subset of questions belonging to this class and then use Cosine Similarity to find the most likely question
-The answer associated with the question with maximum cosine similarity to user's query is served to the user.
+## Technologies Used
 
-Various options are provided in case of mismatch.
-These are Debug - Let's you know the class predicted and the question with maximum cosine similarity
-          TOP5 - Gives answer to top 5 questions with cosine similarity to user's query in descending order
+- Python 3.x
+- Flask (Web Framework)
+- HTML/CSS/JavaScript
+- Bootstrap 5
+- Font Awesome Icons
+- pyttsx3 (Text-to-Speech)
+- SpeechRecognition (Speech-to-Text)
+
+## Setup Instructions
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/banking-faq-bot.git
+   cd banking-faq-bot
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Run the application:
+   ```bash
+   python app.py
+   ```
+
+4. Open your browser and visit:
+   ```
+   http://localhost:5000
+   ```
+
+## Project Structure
+
+```
+banking-faq-bot/
+├── app.py              # Flask application
+├── Bank FAQbot.py      # Core chatbot logic
+├── requirements.txt    # Python dependencies
+├── templates/         
+│   └── index.html     # Web interface
+├── static/            # Static assets
+├── bank_faqs.json     # FAQ database
+└── README.md          # Documentation
+```
+
+## Usage
+
+1. Start the Flask server using `python app.py`
+2. Open your web browser and navigate to `http://localhost:5000`
+3. Type your banking-related questions in the chat interface
+4. For voice interaction, click the microphone icon and speak your question
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.

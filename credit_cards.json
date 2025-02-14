@@ -1,0 +1,14 @@
+{
+    "bank": {
+        "credit_cards": [
+            [
+                "What are the types of credit cards available?",
+                "Our bank offers several types of credit cards to suit different needs:\n1. Rewards Credit Cards:\n   - Business MoneyBack Card\n   - Business Regalia First\n   - Business Regalia\n2. Travel Credit Cards:\n   - Regalia ForexPlus Card\n   - Multicurrency Platinum ForexPlus Card\n3. Lifestyle Credit Cards:\n   - Platinum Credit Card\n   - Times Card\n4. Business Credit Cards:\n   - Corporate Credit Card\n   - Business MoneyBack Card\nEach card comes with unique benefits, rewards, and privileges. Visit our nearest branch or website for detailed information about each card type."
+            ],
+            [
+                "What are the benefits of credit cards?",
+                "Credit cards offer numerous benefits:\n1. Rewards and cashback on purchases\n2. Travel insurance and airport lounge access (on premium cards)\n3. EMI options for large purchases\n4. Worldwide acceptance\n5. Enhanced security for online transactions\n6. Emergency card replacement\n7. 24/7 customer support"
+            ]
+        ]
+    }
+}

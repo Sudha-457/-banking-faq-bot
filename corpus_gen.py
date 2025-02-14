@@ -1,18 +1,25 @@
 import json
 import pandas as pd
 
+# Load main bank FAQs
 with open('bank_faqs.json') as f:
     data = json.load(f)
 
-data = data['bank']
+# Load credit card FAQs
+with open('credit_cards.json') as f:
+    credit_data = json.load(f)
+
+# Merge the data
+data['bank']['credit_cards'] = credit_data['bank']['credit_cards']
+
 bank_faq = pd.DataFrame(columns=['Question', 'Answer', 'Class'])
 
 questions = []
 answers = []
 classes = []
 
-for key in data.keys():
-    for qnas in data[key]:
+for key in data['bank'].keys():
+    for qnas in data['bank'][key]:
         questions.append(qnas[0])
         answers.append(qnas[1])
         classes.append(key)
