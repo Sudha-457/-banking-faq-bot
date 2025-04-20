@@ -1,0 +1,58 @@
+{
+  "bank": {
+    "general": [
+      [
+        "What are the different types of bank accounts available?",
+        "There are several types of bank accounts: 1. Savings Account - for personal banking and earning interest 2. Current Account - for businesses with high transaction volumes 3. Salary Account - for receiving employment income 4. Fixed Deposit Account - for long-term savings with higher interest rates 5. Recurring Deposit Account - for regular monthly savings"
+      ],
+      [
+        "How can I check my account balance?",
+        "You can check your account balance through multiple channels: 1. Mobile Banking App 2. Internet Banking 3. ATM 4. Phone Banking 5. By visiting your nearest branch 6. Through SMS banking services"
+      ],
+      [
+        "What is internet banking and how do I activate it?",
+        "Internet banking is a secure way to access your bank account online. To activate it: 1. Visit your bank branch with ID proof 2. Fill out the internet banking registration form 3. Receive your login credentials 4. Set up your password and security questions 5. Complete the activation process by verifying your details"
+      ]
+    ],
+    "security": [
+      [
+        "What should I do if I lose my debit card?",
+        "If you lose your debit card: 1. Immediately block your card through mobile/internet banking 2. Call the bank's 24/7 helpline to report the loss 3. Request a replacement card 4. File a police complaint if there are unauthorized transactions 5. Monitor your account for any suspicious activity"
+      ],
+      [
+        "How can I protect myself from banking fraud?",
+        "To protect yourself from banking fraud: 1. Never share OTP, PIN, or passwords 2. Use strong passwords and change them regularly 3. Enable two-factor authentication 4. Monitor your account regularly 5. Be cautious of suspicious emails or phone calls 6. Use secure networks for banking transactions"
+      ]
+    ],
+    "digital_banking": [
+      [
+        "What are the benefits of mobile banking?",
+        "Mobile banking offers several benefits: 1. 24/7 account access 2. Easy fund transfers 3. Bill payments and recharges 4. Digital wallet integration 5. Real-time transaction alerts 6. Secure banking on the go 7. Paperless banking experience"
+      ],
+      [
+        "How do I set up UPI payments?",
+        "To set up UPI payments: 1. Download your bank's mobile banking app 2. Register for UPI by linking your bank account 3. Create a UPI PIN 4. Start making payments using UPI ID or QR code scanning"
+      ]
+    ],
+    "loans": [
+      [
+        "What types of loans does the bank offer?",
+        "The bank offers various types of loans: 1. Home Loans 2. Personal Loans 3. Vehicle Loans 4. Education Loans 5. Business Loans 6. Gold Loans 7. Credit Cards"
+      ],
+      [
+        "What documents are required for a personal loan?",
+        "Common documents required for a personal loan: 1. Identity proof (PAN/Aadhaar) 2. Address proof 3. Income proof (Salary slips/IT returns) 4. Bank statements 5. Employment details 6. Photographs"
+      ]
+    ],
+    "investments": [
+      [
+        "What investment options does the bank provide?",
+        "The bank offers various investment options: 1. Fixed Deposits 2. Recurring Deposits 3. Mutual Funds 4. Insurance Products 5. Government Securities 6. Equity Trading Services 7. Portfolio Management Services"
+      ],
+      [
+        "How do I start investing in mutual funds through the bank?",
+        "To invest in mutual funds: 1. Complete your KYC 2. Meet with a financial advisor 3. Choose suitable mutual funds 4. Set up a SIP or make lump sum investments 5. Monitor your investments through online banking"
+      ]
+    ]
+  }
+}

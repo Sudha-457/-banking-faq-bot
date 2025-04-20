@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import pickle
 import operator
-from sklearn.svm import SVC
+from sklearn.naive_bayes import MultinomialNB
 from sklearn.model_selection import train_test_split as tts
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.preprocessing import LabelEncoder as LE
@@ -41,9 +41,9 @@ y = le.transform(data['Class'])
 
 trainx, testx, trainy, testy = tts(X, y, test_size=.25, random_state=42)
 
-model = SVC(kernel='linear')
+model = MultinomialNB()
 model.fit(trainx, trainy)
-print("SVC:", model.score(testx, testy))
+print("Naive Bayes accuracy:", model.score(testx, testy))
 
 
 def get_max5(arr):
@@ -227,8 +227,8 @@ def chat():
                 continue
 
             t_usr = tfv.transform([cleanup(usr.strip().lower())])
-            prediction = model.predict(t_usr)
-            class_ = le.inverse_transform([prediction])[0]
+            prediction = model.predict(t_usr)[0]  # Get the first element of the prediction array
+            class_ = le.inverse_transform([prediction])[0]  # Ensure we're passing a 1D array
             questionset = data[data['Class']==class_]
 
             if DEBUG:
@@ -237,7 +237,7 @@ def chat():
 
             cos_sims = []
             for question in questionset['Question']:
-                sims = cosine_similarity(tfv.transform([question]), t_usr)
+                sims = cosine_similarity(tfv.transform([question]), t_usr)[0][0]  # Get the scalar value
                 cos_sims.append(sims)
                 
             ind = cos_sims.index(max(cos_sims))
